@@ -83,7 +83,7 @@ Following secrets are credentials required to access azure container registry.Th
 
 These secrets will be added as shown below-
 <p align="center">
-  <img src="docs/images/image.png" alt="GitHub Template repository" width="700"/>
+  <img src="docs/images/image.PNG" alt="GitHub Template repository" width="700"/>
 </p>
 
 
