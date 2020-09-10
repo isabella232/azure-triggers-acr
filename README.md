@@ -57,18 +57,6 @@ To do so, click on the Settings tab in your repository, then click on Secrets an
 Please follow [this link](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets) for more details. 
 
 
-
-#### Credentials required to push/pull to azure container registry
-Following secrets are credentials required to access azure container registry.These can be set using the azure credentials generated above-
-- REGISTRY_USERNAME will be value of "clientId" from the azure credentials generated.
-- REGISTRY_PASSWORD will be value of "clientSecret" from the azure credentials generated.
-
-
-These secrets will be added as shown below-
-<p align="center">
-  <img src="docs/images/image.png" alt="GitHub Template repository" width="700"/>
-</p>
-
 #### To Allow Azure to trigger a GitHub Workflow
  We also need github PAT token with `repo` access so that we can trigger a github workflow when there is a new image on Azure Container Registry. 
  Steps to setup PAT token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
@@ -82,6 +70,20 @@ These secrets will be added as shown below-
  Add the PAT token with as [a secret](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets) with the name `PATTOKEN` in your GitHub repository:
  <p align="center">
   <img src="docs/images/pat_secret.png" alt="GitHub Template repository" width="700"/>
+</p>
+
+
+
+
+#### Credentials required to push/pull to azure container registry
+Following secrets are credentials required to access azure container registry.These can be set using the azure credentials generated above-
+- REGISTRY_USERNAME will be value of "clientId" from the azure credentials generated.
+- REGISTRY_PASSWORD will be value of "clientSecret" from the azure credentials generated.
+
+
+These secrets will be added as shown below-
+<p align="center">
+  <img src="docs/images/image.png" alt="GitHub Template repository" width="700"/>
 </p>
 
 
