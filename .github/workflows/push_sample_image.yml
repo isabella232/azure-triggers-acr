@@ -14,7 +14,8 @@ jobs:
     build-and-deploy:
         runs-on: ubuntu-latest  
         steps:
-                  
+        - uses: actions/checkout@master 
+                    
         - name: 'Build and push image'
           uses: azure/docker-login@v1
           with:
@@ -23,6 +24,5 @@ jobs:
             password: ${{ secrets.REGISTRY_PASSWORD }} 
             
         - run: |
-            docker pull nginx
-            docker tag nginx:latest ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1
-            docker push ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1 
+            docker build . -t ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1
+            docker push ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1
