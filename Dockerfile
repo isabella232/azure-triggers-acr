@@ -1,4 +1,5 @@
-FROM node:6.9.3
+FROM node:8
+LABEL maintainer="Azure App Service Container Images <appsvc-images@microsoft.com>"
 
 # Create app directory
 WORKDIR /app
@@ -11,5 +12,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 80
+EXPOSE 8080 8080
 CMD [ "npm", "start" ]
