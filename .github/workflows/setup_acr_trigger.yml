@@ -5,7 +5,7 @@ on:
         
 # CONFIGURATION 
 #
-# 1. Set up the following secrets in your repository:
+# 1. Set up the following secrets in your repository: 
 #   RESOURCE_GROUP 
 #   CONTAINER_REGISTRY_NAME
 env:
