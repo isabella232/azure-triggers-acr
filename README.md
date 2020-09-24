@@ -109,7 +109,7 @@ After setting environment variables changes can be saved by commit which will tr
 #### Define Trigger
 We have created sample workflow file [deploy_image](/.github/workflows/deploy_image.yml#L3) with the necessary trigger on ACR set. You need to update this workflow file [deploy_image](/.github/workflows/deploy_image.yml) with values for following environment variables-
  - RESOURCE_GROUP
- - CLUST
+ - CLUST_NAME
 
  If you add this repository dispatch event `containerregistry-imagepushed` in other workflows, they will also start listening to the image push events in the configured ACR. 
   
