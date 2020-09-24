@@ -89,7 +89,7 @@ These secrets will be added as shown below-
 
 ### 4. Setup and Define Triggers
 
-### Events that trigger workflow
+#### Events that trigger workflow
 Github workflows are triggered based on events specified inside workflows. These events can be from inside the github repo like a push commit or can be from outside like a webhook([repository-dispatch](https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#repository_dispatch)).
 Refer [link](https://docs.github.com/en/actions/reference/events-that-trigger-workflows) for more details on configuring your workflows to run on specific events.
 
@@ -107,7 +107,7 @@ User needs to set the following environment variables in [setup_acr_trigger](/.g
 After setting environment variables changes can be saved by commit which will trigger this workflow for required setup.
 
 #### Define Trigger
-We have created sample workflow file [deploy_image](/.github/workflows/deploy_image.yml#L3) with the necessary trigger on ACR set. You need to update this workflow file [deploy_image](/.github/workflows/deploy_image.yml) with values for following environment variables-
+We have created sample workflow file [deploy_image](/.github/workflows/deploy_image.yml#L3) with the necessary trigger on ACR set. You need to update this workflow file [deploy_image](/.github/workflows/deploy_image.yml) with values for following environment variables to complete the setup.
  - RESOURCE_GROUP
  - CLUSTER_NAME
 
