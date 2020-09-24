@@ -6,7 +6,7 @@ on:
 # CONFIGURATION
 # Set up the following secrets in your repository:
 #
-#   CLUST_NAME
+#   CLUSTER_NAME
 #   RESOURCE_GROUP
 env:
    CLUSTER_NAME: your-cluster-name               #set this to your kubernetes cluster name
