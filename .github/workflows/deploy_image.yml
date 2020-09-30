@@ -49,7 +49,7 @@ jobs:
         overrides: |     
           image.repository:${{ env.REPO_NAME }}
           image.tag:${{ env.REPO_VERSION }}
-        helm-version: 'latest'  
+        helm-version: 'v3.1.1'
         releaseName: test0125
       id: bake
 
